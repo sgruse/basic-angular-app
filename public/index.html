@@ -14,8 +14,12 @@
 
     <main>
       <section ng-show="text.isActive('home')">
-        Welcome Home!
-        <p>A nested tag.</p>
+        <h1>Welcome Home! On a scale from 1 - 10 how is your day goin? {{text.name}}</h1>
+        <p>
+          You're having a {{text.name}} of 10 day!
+        </p>
+        <input ng-model="text.name">
+        <button ng-click="text.clearField()">Clear</button>
       </section>
 
       <section ng-show="text.isActive('about')">

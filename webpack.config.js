@@ -8,8 +8,5 @@ module.exports = {
     loaders: [
       { test: /\.css$/, loader: 'style!css'}
     ]
-  }
-}
-
-
-// How is it compiling everything if im only telling it to look at app.js
+  };
+};
