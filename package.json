@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/sgruse/basic-angular-app/issues"
   },
-  "homepage": "https://github.com/sgruse/basic-angular-app#readme"
+  "homepage": "https://github.com/sgruse/basic-angular-app#readme",
+  "devDependencies": {
+    "express": "^4.13.4"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
