@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './public/js/app.js',
+  entry: './public/entry.js',
   output: {
     path: __dirname + '/public/',
     filename: 'bundle.js'
@@ -8,5 +8,5 @@ module.exports = {
     loaders: [
       { test: /\.css$/, loader: 'style!css'}
     ]
-  };
-};
+  }
+}

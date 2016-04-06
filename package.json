@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/sgruse/basic-angular-app#readme",
   "devDependencies": {
-    "express": "^4.13.4"
+    "css-loader": "^0.23.1",
+    "express": "^4.13.4",
+    "style-loader": "^0.13.1"
   },
   "dependencies": {
     "express": "^4.13.4"
