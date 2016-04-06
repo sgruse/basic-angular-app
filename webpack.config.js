@@ -1,7 +1,7 @@
 module.exports = {
-  entry: './entry.js',
+  entry: './public/js/app.js',
   output: {
-    path: __dirname,
+    path: __dirname + '/public/',
     filename: 'bundle.js'
   },
   module: {
@@ -10,3 +10,6 @@ module.exports = {
     ]
   }
 }
+
+
+// How is it compiling everything if im only telling it to look at app.js

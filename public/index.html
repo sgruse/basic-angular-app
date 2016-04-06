@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body>
+  <body ng-controller="TextController as text">
+    <header>
+      <nav>
+        <a ng-click="text.setTab('home')" ng-class="{currentTab: text.isActive('home')}">Home</a>
+        <a ng-click="text.setTab('about')" ng-class="{currentTab: text.isActive('about')}">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section ng-show="text.isActive('home')">
+        Welcome Home!
+        <p>A nested tag.</p>
+      </section>
+
+      <section ng-show="text.isActive('about')">
+        <h1>About Me!</h1>
+      </section>
+    </main>
+
     <script type="text/javascript" src="bundle.js" chartset="utf-8"></script>
-    <!-- <h1>Yo Man This Is ANGULAR</h1> -->
   </body>
 </html>
